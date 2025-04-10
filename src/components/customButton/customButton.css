@@ -1,0 +1,24 @@
+.custom-button {
+    padding: var(--spacing-small) var(--spacing-medium);
+    font-size: var(--font-size-medium);
+    color: var(--button-color-text);
+    background-color: var(--button-color-background);
+    border: 1px solid var(--button-color-border);
+    border-radius: var(--border-radius-small);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 1rem;
+}
+
+.custom-button:hover {
+    background-color: var(--button-color-background-hover);
+    color: var(--button-color-text-hover);
+    border: 1px solid var(--button-color-border-hover);
+    border-color: var(--button-color-border-hover);
+}
+
+.custom-button:active {
+    background-color: var(--button-color-background-hover);
+    color: var(--button-color-text-hover);
+    border-color: var(--button-color-border-hover);
+}

@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Rubik", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +10,49 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+body {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+  --color-primary-black: #000000;
+  --color-secondary-black-1: #404040;
+  --color-secondary-black-2: #7f7f7f;
+  --color-secondary-black-3: #bfbfbf;
+  --color-secondary-black-4: #f5f5f5;
+  --color-secondary-black-5: #f1f1f1;
+  --color-background-white: #ffffff;
+  --color-border: #ddd;
+  --color-text: #404040;
+  --color-text-light: #b3b3b3;
+
+  --button-color-background-hover: #000000;
+  --button-color-background: #ffffff;
+  --button-color-text-hover: #ffffff;
+  --button-color-text: #000000;
+  --button-color-border-hover: #000000;
+  --button-color-border: #000000;
+
+  --font-size-small: 14px;
+  --font-size-medium: 16px;
+  --font-size-large: 20px;
+  --font-size-extra-large: 24px;
+
+  --spacing-small: 0.5rem;
+  --spacing-medium: 1rem;
+  --spacing-large: 2rem;
+
+  --border-radius-small: 4px;
+  --border-radius-medium: 8px;
+  --border-radius-large: 12px;
 }

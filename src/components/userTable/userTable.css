@@ -1,0 +1,101 @@
+.user-table {
+    width: 96%;
+    border-collapse: collapse;
+    margin: 0% 2% 2% 2%;
+    border-radius: var(--border-radius-medium);
+    overflow: hidden;
+}
+
+.user-table__header {
+    background-color: var(--color-secondary-black-5);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.user-table__header-row {
+    border-bottom: 2px solid var(--color-secondary-black-3);
+}
+
+.user-table__header-cell {
+    padding: 0.5rem;
+    text-align: left;
+    font-weight: normal;
+    font-size: var(--font-size-large);
+    color: var(--color-secondary-black-1);
+}
+
+.user-table__body-row {
+    background-color: var(--color-background-white);
+}
+
+.user-table__body-row:hover {
+    background-color: var(--color-secondary-black-5);
+}
+
+.user-table__body-cell {
+    border-bottom: 2px solid var(--color-secondary-black-4);
+    border-right: 0px;
+    padding: 8px;
+    text-align: left;
+    font-size: var(--font-size-small);
+    color: var(--color-secondary-black-1);
+}
+
+.user-table__button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-table__button--menu {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.user-table__button--menu:hover {
+    background-color: var(--color-background-white);
+}
+
+.user-table__icon {
+    width: 16px;
+    height: 16px;
+    fill: var(--color-secondary-black-1);
+}
+
+.user-table__button--menu:hover .user-table__icon {
+    fill: var(--color-primary-black);
+}
+
+/* Skeleton styles */
+.skeleton {
+    background-color: var(--color-secondary-black-4);
+    height: 20px;
+    border-radius: 4px;
+    animation: skeleton-loading 1.5s infinite;
+}
+
+.skeleton--button {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-color: var(--color-secondary-black-5);
+    }
+
+    50% {
+        background-color: var(--color-secondary-black-4);
+    }
+
+    100% {
+        background-color: var(--color-secondary-black-3);
+    }
+}

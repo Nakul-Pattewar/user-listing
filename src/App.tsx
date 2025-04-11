@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import UserTable from './components/userTable/userTable';
-import Pagination from './components/pagination/pagination';
-import { fetchUsers } from './api/fetchUsers';
-import CustomButton from './components/customButton/customButton';
+import UserTable from './components/userTable/UserTable';
+import Pagination from './components/Pagination/Pagination';
+import { fetchUsers } from './api/FetchUsers';
+import CustomButton from './components/CustomButton/CustomButton';
 import './App.css';
-import UserPopup from './components/userPopup/userPopup';
-import { Action, Gender, Status } from './eums/enums';
-import { User } from './components/userTable/userTable';
+import UserPopup from './components/UserPopup/UserPopup';
+import { Action, Gender, Status } from './eums/Enums';
+import { User } from './components/userTable/UserTable';
 
 function App() {
   const [users, setUsers] = useState<User[]>([]);

@@ -1,6 +1,6 @@
 import axios from 'axios';
-import { Gender, Status } from '../eums/enums';
-import { ACCESS_TOKEN, API_URL } from '../constants';
+import { Gender, Status } from '../eums/Enums';
+import { ACCESS_TOKEN, API_URL } from '../Constants';
 
 export const addUser = async (userData: { name: String, email: String, gender: Gender, status: Status }) => {
     try {

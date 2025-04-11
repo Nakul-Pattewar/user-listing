@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { ACCESS_TOKEN, API_URL } from '../constants';
+import { ACCESS_TOKEN, API_URL } from '../Constants';
 
 export const fetchUsers = async (page: number, perPage: number = 10) => {
   try {

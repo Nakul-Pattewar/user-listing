@@ -1,5 +1,5 @@
 import React from 'react';
-import './userTable.css';
+import './UserTable.css';
 import { ReactComponent as ThreeDotsIcon } from '../../assets/three-dots-vertical.svg';
 
 export interface User {

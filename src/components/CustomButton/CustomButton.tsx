@@ -1,5 +1,5 @@
 import React from 'react';
-import './customButton.css';
+import './CustomButton.css';
 
 interface ButtonProps {
     text: string;

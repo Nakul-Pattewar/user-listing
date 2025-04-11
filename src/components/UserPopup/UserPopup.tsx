@@ -1,8 +1,8 @@
 import React from "react";
-import './userPopup.css';
+import './UserPopup.css';
 import { toast } from 'react-toastify';
-import { Action, Status, Gender } from "../../eums/enums";
-import { addUser } from "../../api/addUser";
+import { Action, Status, Gender } from "../../eums/Enums";
+import { addUser } from "../../api/AddUser";
 
 interface UserPopupProps {
     action: Action;

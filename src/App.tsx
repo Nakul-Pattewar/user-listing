@@ -4,20 +4,25 @@ import Pagination from './components/pagination/pagination';
 import { fetchUsers } from './api/fetchUsers';
 import CustomButton from './components/customButton/customButton';
 import './App.css';
-
-interface User {
-  id: number;
-  name: string;
-  email: string;
-  gender: string;
-  status: string;
-}
+import UserPopup from './components/userPopup/userPopup';
+import { Action, Gender, Status } from './eums/enums';
+import { User } from './components/userTable/userTable';
 
 function App() {
   const [users, setUsers] = useState<User[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const [loading, setLoading] = useState(true);
+  const [showPopup, setShowPopup] = useState(false);
+
+  const handleAddUser = () => {
+    setShowPopup(true);
+  };
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+    loadUsers(currentPage);
+  };
 
   const loadUsers = async (page: number) => {
     setLoading(true);
@@ -44,7 +49,7 @@ function App() {
     <div className="App">
       <div className="table_header">
         <h1 className="header__title">Users List</h1>
-        <CustomButton text="Add user" onClick={() => { }} />
+        <CustomButton text="Add user" onClick={handleAddUser} />
       </div>
       <UserTable users={users} loading={loading} />
       <Pagination
@@ -52,6 +57,16 @@ function App() {
         totalPages={totalPages}
         onPageChange={handlePageChange}
       />
+      {showPopup && (
+        <UserPopup
+          action={Action.ADD}
+          name=""
+          email=""
+          status={Status.ACTIVE}
+          gender={Gender.MALE}
+          onClose={handleClosePopup}
+        />
+      )}
     </div>
   );
 }

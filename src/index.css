@@ -55,4 +55,8 @@ code {
   --border-radius-small: 4px;
   --border-radius-medium: 8px;
   --border-radius-large: 12px;
+
+  --popup-overlay-background: rgba(0, 0, 0, 0.5);
+  --popup-background: var(--color-background-white);
+  --popup-box-shadow-color: rgba(0, 0, 0, 0.2);
 }

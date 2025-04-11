@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 import { Action, Status, Gender } from "../../eums/Enums";
 import { addUser } from "../../api/AddUser";
 
-interface UserPopupProps {
+interface Props {
     action: Action;
     name: string;
     email: string;
@@ -13,7 +13,7 @@ interface UserPopupProps {
     onClose: () => void;
 }
 
-const UserPopup: React.FC<UserPopupProps> = ({ action, name, email, status, gender, onClose }) => {
+const UserPopup: React.FC<Props> = ({ action, name, email, status, gender, onClose }) => {
     const [formData, setFormData] = React.useState({
         name,
         email,
